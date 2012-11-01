@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:lift="http://liftweb.net">
+    <head>
+        <title>Form page</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                This is the simplest type of form processing... plain old
+                mechanism of naming form elements and processing the form elements
+                in a post-back.
+            </div>
+
+            <div>
+                <form action="/dumb" method="post" class="lift:DumbForm">
+                    Name: <input name="name" /><br />
+                    Age: <input name="age" /><br />
+                    <input type="submit" value="Submit" />
+                </form>
+                <div class="lift:msgs" />
+            </div>
+        </div>
+    </body>
+</html>
